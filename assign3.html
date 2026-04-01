@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button Cursor Demo</title>
+    <style>
+        .custom-button {
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            background-color: #2ecc71;
+            color: white;
+            
+            /* Optional transition for a smoother hover effect */
+            transition: background-color 0.2s ease;
+        }
+
+        /* The magic happens here */
+        .custom-button:hover {
+            cursor: pointer; /* Changes the arrow to a hand */
+            background-color: #27ae60; /* Darkens the green slightly */
+        }
+
+        /* Example for a different button style */
+        .ghost-button {
+            padding: 12px 24px;
+            background: transparent;
+            border: 2px solid #3498db;
+            color: #3498db;
+            margin-left: 10px;
+        }
+
+        .ghost-button:hover {
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="custom-button">Click Me</button>
+    <button class="ghost-button">Ghost Button</button>
+
+</body>
+</html>
